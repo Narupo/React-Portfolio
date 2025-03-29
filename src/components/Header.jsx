@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header>
-      <h1>Paolo Sierra</h1>
+      <h1>The Village Hidden On The Web </h1>
     </header>
   );
 }

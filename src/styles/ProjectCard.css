@@ -1,0 +1,78 @@
+.flex-item {
+    background-color: #2c2c2c;
+    border: 2px solid var(--naruto-orange);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--naruto-orange);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .flex-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #ff9800;
+  }
+  
+  .img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-bottom: 1px solid var(--naruto-orange);
+  }
+  
+  .overlay {
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--naruto-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  h2 a {
+    color: var(--naruto-orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  h2 a:hover {
+    color: #ffb74d;
+  }
+  
+  .github-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes it white on dark bg */
+    transition: filter 0.3s ease;
+  }
+  
+  h2 a:hover .github-icon {
+    filter: brightness(1) invert(45%) sepia(100%) saturate(300%) hue-rotate(10deg); /* Orange tint */
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .flex-item {
+      max-width: 90%;
+    }
+  }
+  
