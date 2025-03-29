@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,11 +6,12 @@ import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import AboutMe from './pages/AboutMe'
 import Nav from './components/Nav'
-import './App.css'
+
 
 function App() {
   return (
     <Router>
+      <body>
       <Header />
       <Nav />
       <main>
@@ -23,6 +23,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      </body>
     </Router>
   );
 }
