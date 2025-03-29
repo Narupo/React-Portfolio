@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header>
-      <h1>My Portfolio</h1>
+      <h1>Paolo Sierra</h1>
     </header>
   );
 }

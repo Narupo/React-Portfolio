@@ -1,22 +1,23 @@
-import React from "react";
-import "../styles/AboutMe.css";
+import '../styles/AboutMe.css';
+import aboutme from '../assets/images/aboutme.jpg'; // Import your image here
 
 function AboutMe() {
-    return (
-      <section classname="about-me">
-        <div classsName="about-me-container">
-          <div className="image-box">
-            <img src="https://via.placeholder.com/200" alt="profile" />
-          </div>
-          <div classname="text-box">
-            <h2>About Me</h2>
-            <p>
-              Hello, and welcome to my portfolio! My name is Paolo, I am a student at Northwestern's coding bootcamp. I am currently learning to be a full stack web developer and have been developing my skills in HTML, CSS, JavaScript, TypeScript, Node.js, and React. I am excited to continue learning and growing as a developer and am always looking for ways to improve my skills. I am excited to see where this journey takes me and am looking forward to the possibilites of the future. Thank you for visiting my portfolio!
-            </p>
-          </div>
+  return (
+    <section className="aboutMe">
+      <div className="aboutMe-container">
+        <img 
+          src={aboutme} // You’ll add your image path later
+          alt="My Photo"
+          className="aboutMe-image"
+        />
+        <div className="aboutMe-text">
+          <h1>About Me</h1>
+          <p>Welcome to my portfolio! (This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look. This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look. This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look.)</p>
+          <p>I am a.... (This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look. This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look. This is text to test the page. I only want to see how it looks when there is a whole paragraph here. Now I have a good idea of what the page will look.  )</p>
         </div>
-      </section>
-    );
-  }
-  
-  export default AboutMe;
+      </div>
+    </section>
+  );
+}
+
+export default AboutMe;

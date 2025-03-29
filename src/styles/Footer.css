@@ -1,12 +1,19 @@
 footer {
-    background-color: #1f1f28;
-    color: #e0e0e0;
+    background-color: var(--naruto-black); /* consistent with body/nav */
+    color: var(--text-light);
     text-align: center;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    width: 100%;
     font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-    text-align: center;
-}
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--naruto-orange); /* thematic highlight */
+  }
+  
+  footer p {
+    margin: 0;
+    color: var(--text-bright); /* slightly brighter than default */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  
+  
