@@ -1,0 +1,88 @@
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #2d2f3a; 
+    color: #e0e0e0;
+}
+
+.about-me-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image-box img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #4c5c72;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3c3f51;
+    border: 2px solid #4c5c72;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+      flex-direction: column; /* Stacks image and text vertically */
+      padding: 1.5rem; /* Reduces padding */
+    }
+  
+    .image-box img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .text-box h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-box p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-me-container {
+      padding: 1rem; /* Further reduce padding */
+    }
+  
+    .image-box img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .text-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-box p {
+      font-size: 0.9rem;
+    }
+  }
+
