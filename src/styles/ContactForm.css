@@ -87,3 +87,52 @@
     margin-bottom: 0.5rem;
   }
   
+/* Responsive Design - Tablets and smaller screens */
+@media (max-width: 768px) {
+    .contactForm {
+      padding: 1.5rem;
+    }
+  
+    .contactForm div {
+      max-width: 90%;
+    }
+  
+    .contactForm h1 {
+      font-size: 1.75rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.95rem;
+      padding: 0.6rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 0.6rem;
+    }
+  }
+  
+  /* Phones and smaller devices */
+  @media (max-width: 480px) {
+    .contactForm {
+      padding: 1rem;
+    }
+  
+    .contactForm h1 {
+      font-size: 1.5rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  
+    button {
+      font-size: 0.95rem;
+      padding: 0.5rem;
+    }
+  }
+
+  

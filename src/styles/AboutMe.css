@@ -1,68 +1,81 @@
-/* src/styles/AboutMe.css */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --naruto-black: #1a1a1a;
-  --naruto-orange: #f57c00;
-  --naruto-light: #f5f5f5;
-}
-
 .aboutMe {
   background: var(--naruto-black);
-  padding: 2rem;
-  margin: 0;              /* 🚫 Remove all margin */
-  padding-top: 2rem;      /* ✅ Add subtle spacing below nav */
-  font-family: 'Abril Fatface', sans-serif;
+  padding: 3rem 2rem;
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
 }
-
 
 .aboutMe-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .aboutMe-image {
-  width: 20%; /* 👈 Scaled down from 25% */
+  width: 240px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 3px solid var(--naruto-orange);
   box-shadow: 0 0 10px var(--naruto-orange);
+  flex-shrink: 0;
 }
-
 
 .aboutMe-text {
-  color: var(--naruto-light);
-  max-width: 600px;
-}
-
-.aboutMe-text h1 {
-  color: var(--naruto-orange);
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  flex: 1;
+  max-width: 700px;
 }
 
 .aboutMe-text p {
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  text-indent: 2em; /* 👈 This adds the indentation */
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
   .aboutMe-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    gap: 2rem;
   }
 
   .aboutMe-image {
-    width: 50%;
+    width: 60%;
+  }
+
+  .aboutMe-text {
+    max-width: 90%;
+  }
+
+  .aboutMe-text p {
+    font-size: 1rem;
+    text-indent: 0; /* Remove indent for smaller screens */
   }
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .aboutMe {
+    padding: 2rem 1rem;
+  }
+
+  .aboutMe-image {
+    width: 80%;
+  }
+
+  .aboutMe-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+
 
 

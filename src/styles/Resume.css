@@ -1,0 +1,91 @@
+.resume {
+    background-color: var(--naruto-black);
+    color: var(--text-light);
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .page-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .page-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+  }
+  
+  .page-section a {
+    color: var(--naruto-orange);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .page-section a:hover {
+    color: #ffb74d;
+  }
+  
+  .page-section h2 {
+    color: var(--naruto-orange);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .page-section li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+  }
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+    .resume {
+      padding: 1.5rem;
+    }
+  
+    .page-section p {
+      font-size: 1rem;
+    }
+  
+    .page-section h2 {
+      font-size: 1.75rem;
+    }
+  
+    .page-section li {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Phones (≤480px) */
+  @media (max-width: 480px) {
+    .resume {
+      padding: 1rem;
+    }
+  
+    .page-section p {
+      font-size: 0.95rem;
+    }
+  
+    .page-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .page-section li {
+      font-size: 0.95rem;
+      padding: 0.4rem 0;
+    }
+  }
+  
+  

@@ -19,13 +19,13 @@ function Nav() {
           </Link>
         </li>
         <li>
-          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
-            Contact
+          <Link to="/resume" className={location.pathname === '/resume' ? 'active' : ''}>
+            Resume
           </Link>
         </li>
         <li>
-          <Link to="/resume" className={location.pathname === '/resume' ? 'active' : ''}>
-            Resume
+          <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
+            Contact
           </Link>
         </li>
       </ul>

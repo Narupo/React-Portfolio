@@ -80,16 +80,48 @@ button:hover {
 }
 
 /* ========== Responsive Base Tweaks ========== */
+
+/* Tablets (≤768px) */
 @media (max-width: 768px) {
   body {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+
+  main {
+    padding: 0.8rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
     font-size: 0.95rem;
   }
 }
 
+/* Phones (≤480px) */
 @media (max-width: 480px) {
   body {
     font-size: 0.9rem;
+    padding: 0;
+  }
+
+  main {
+    padding: 0.6rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.4em 0.9em;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 }
+
 
 
