@@ -15,7 +15,7 @@ function AboutMe() {
           <PageTitle title="About Me" /> {/* ✅ Consistent title style */}
           
           <p>
-            With nearly a decade of experience in hospitality and team leadership, I’ve built a career around adaptability, communication, and high-pressure problem solving. I’ve worked in every front-of-house role, from server and bartender to manager, and even some back-of-house roles as well. One of my favorite accomplishments during my time working in the hospitality industry was helping Joe & The Juice launch their brand in Chicago after training with their team in New York.
+            With nearly a decade of experience in hospitality, I’ve built a career around adaptability, communication, and high-pressure problem solving. I’ve worked in every front-of-house role and even some back-of-house roles, from server and bartender all the way up to management. One of my favorite accomplishments during my time working in the hospitality industry was helping Joe & The Juice launch their brand in Chicago after training with their team in New York.
           </p>
           <p>
             After spending the majority of my career in hospitality, I later transitioned into social services, working one-on-one with young adults facing mental health and substance abuse challenges. That role strengthened my empathy, resourcefulness, and commitment to helping others — qualities I now bring to the world of software development.

@@ -1,4 +1,3 @@
-import React from 'react';
 import PageTitle from '../components/PageTitle';
 import '../styles/Resume.css'; // Optional if you want to style this page later
 

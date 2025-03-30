@@ -1,4 +1,9 @@
+import PropTypes from 'prop-types';
 import '../styles/PageTitle.css';
+
+PageTitle.propTypes = {
+    title: PropTypes.string.isRequired,
+  };
 
 function PageTitle({ title }) {
   return (
