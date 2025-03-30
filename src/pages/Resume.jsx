@@ -1,11 +1,11 @@
 import PageTitle from '../components/PageTitle';
-import '../styles/Resume.css'; // Optional if you want to style this page later
+import '../styles/Resume.css'; 
 
 function Resume() {
   return (
     <section className="resume">
       <div className="page-section">
-        <PageTitle title="Resume" />
+        <PageTitle title="Resume" /> 
 
         <p>
           You can download my resume{' '}

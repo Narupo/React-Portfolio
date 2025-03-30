@@ -1,5 +1,6 @@
 import '../styles/ProjectCard.css';
 import PropTypes from 'prop-types';
+import githubLogo from '../assets/images/github.png';
 
 ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
@@ -12,22 +13,43 @@ ProjectCard.propTypes = {
 function ProjectCard({ title, image, description, liveLink, githubLink }) {
   return (
     <div className="flex-item">
-      <div className="img-container">
-        <img src={image} alt={title} className="project-image" />
-        <div className="overlay">
-          <p>{description}</p>
+      <div className="card-body">
+        <div className="img-container">
+          <img src={image} alt={title} className="project-image" />
+          <div className="hover-overlay">
+            <p>{description}</p>
+          </div>
         </div>
       </div>
-      <h2>
-        <a href={liveLink} target="_blank" rel="noopener noreferrer">
+
+      <div className="project-footer">
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-title"
+        >
           {title}
         </a>
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <img src="/assets/images/github.png" alt="GitHub Logo" className="github-icon" />
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={githubLogo}
+            alt="GitHub Logo"
+            className="github-icon"
+          />
         </a>
-      </h2>
+      </div>
     </div>
   );
 }
 
 export default ProjectCard;
+
+
+
+
+

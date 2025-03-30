@@ -1,6 +1,6 @@
 import '../styles/ContactForm.css';
 import { useState } from 'react';
-import PageTitle from '../components/PageTitle'; // ✅ Import the reusable title component
+import PageTitle from '../components/PageTitle'; 
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +51,7 @@ const ContactForm = () => {
   return (
     <section className="contactForm">
       <div>
-        <PageTitle title="Contact Me" /> {/* ✅ Uniform page header */}
+        <PageTitle title="Contact Me" /> 
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
