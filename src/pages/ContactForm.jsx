@@ -1,6 +1,5 @@
 import '../styles/ContactForm.css';
 import { useState } from 'react';
-import PageTitle from '../components/PageTitle'; 
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,12 +10,10 @@ const ContactForm = () => {
   const [errors, setErrors] = useState({});
   const [submittedData, setSubmittedData] = useState(null);
 
-  // Validate email format
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
-  // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -25,7 +22,6 @@ const ContactForm = () => {
     });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     let tempErrors = {};
@@ -33,7 +29,6 @@ const ContactForm = () => {
     if (!formData.name.trim()) tempErrors.name = 'Name is required.';
     if (!formData.email.trim()) tempErrors.email = 'Email is required.';
     if (!formData.message.trim()) tempErrors.message = 'Message is required.';
-
     if (formData.email && !isValidEmail(formData.email)) {
       tempErrors.email = 'Invalid email address.';
     }
@@ -51,7 +46,7 @@ const ContactForm = () => {
   return (
     <section className="contactForm">
       <div>
-        <PageTitle title="Contact Me" /> 
+        <h1>Contact Me</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
@@ -91,6 +86,14 @@ const ContactForm = () => {
           <button type="submit">Send</button>
         </form>
 
+        {/* ✅ Disclaimer outside form */}
+        <div className="form-disclaimer-wrapper">
+          <p className="form-disclaimer">
+            ⚠️ Please note that this contact form is currently under development and does not send messages yet.
+          </p>
+        </div>
+
+        {/* Optional: Submitted info */}
         {submittedData && (
           <div className="submitted-data">
             <h2>Submitted Information:</h2>
@@ -105,4 +108,5 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
 
