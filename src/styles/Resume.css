@@ -2,7 +2,6 @@
     background-color: var(--naruto-black);
     color: var(--text-light);
     padding: 2rem;
-    min-height: 100vh;
     font-family: 'Inter', sans-serif;
   }
   

@@ -18,11 +18,16 @@ body {
   display: block;
 }
 
-/* NEW: sticky footer layout */
+/* Sticky footer layout support */
 .app-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
 }
 
 main {
