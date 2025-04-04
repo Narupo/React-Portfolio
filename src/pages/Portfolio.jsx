@@ -6,7 +6,7 @@ import PageTitle from '../components/PageTitle';
 import projectImage1 from '../assets/images/propfolio.jpg';
 import projectImage2 from '../assets/images/books.jpg';
 import projectImage3 from '../assets/images/weather.webp';
-import projectImage4 from '../assets/images/candidate.jpg';
+//import projectImage4 from '../assets/images/candidate.jpg';
 
 function Portfolio() {
   const projects = [
