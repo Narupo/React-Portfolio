@@ -97,7 +97,7 @@
   filter: brightness(1) invert(45%) sepia(100%) saturate(300%) hue-rotate(10deg);
 }
 
-/* Responsive */
+/* Responsive Design for Tablets */
 @media (max-width: 768px) {
   .flex-item {
     max-width: 90%;
@@ -112,6 +112,7 @@
   }
 }
 
+/* Responsive Design for Mobile */
 @media (max-width: 480px) {
   .flex-item {
     max-width: 100%;

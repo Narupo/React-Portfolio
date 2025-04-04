@@ -4,7 +4,8 @@
   color: var(--text-light);
   font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Ensure vertical stacking */
+  align-items: center;
 }
 
 .aboutMe-container {
@@ -35,7 +36,6 @@
   font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 1.2rem;
-  text-indent: 2em; /* 👈 This adds the indentation */
 }
 
 /* Responsive Design for Tablets */

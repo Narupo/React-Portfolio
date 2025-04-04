@@ -12,7 +12,7 @@
     letter-spacing: 1px;
   }
 
-/* Tablets */
+/* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .page-title h1 {
       font-size: 2rem;
@@ -20,7 +20,7 @@
     }
   }
   
-  /* Phones */
+/* Responsive Design for Mobile */
   @media (max-width: 480px) {
     .page-title h1 {
       font-size: 1.6rem;

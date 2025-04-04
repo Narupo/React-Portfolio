@@ -9,7 +9,7 @@ function Resume() {
 
         <p>
           You can download my resume{' '}
-          <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
+          <a href="/Paolo-Sierra-Resume.pdf" download target="_blank" rel="noopener noreferrer">
             here
           </a>.
         </p>
@@ -28,3 +28,4 @@ function Resume() {
 }
 
 export default Resume;
+

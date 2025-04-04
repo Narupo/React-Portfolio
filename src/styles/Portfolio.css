@@ -19,7 +19,7 @@
     align-items: flex-start;
   }
 
-/* Tablets (≤768px) */
+/* Responsive Design for Tablets */
 @media (max-width: 768px) {
     .portfolio {
       padding: 1.5rem;
@@ -30,7 +30,7 @@
     }
   }
   
-  /* Phones (≤480px) */
+/* Responsive Design for Mobile */
   @media (max-width: 480px) {
     .portfolio {
       padding: 1rem;

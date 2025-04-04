@@ -1,40 +1,39 @@
 header {
-  background-color: var(--naruto-black); /* Matches rest of theme */
-  color: var(--naruto-orange);           /* Naruto highlight */
+  background-color: var(--naruto-black);
+  color: var(--naruto-orange);
   text-align: center;
   font-family: 'Kdam Thmor Pro', sans-serif;
-  padding: 1.5rem 0;
+  padding: 1rem 0; /* ↓ tightened from 1.5rem to 1rem */
   margin: 0;
-  min-height: 100px;
+  min-height: auto; /* ↓ remove unnecessary height lock */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid var(--naruto-orange); /* Stylish visual divider */
+  border-bottom: 2px solid var(--naruto-orange);
 }
 
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0.25rem 0; /* ↓ added slight vertical breathing room */
   color: var(--naruto-orange);
   letter-spacing: 1px;
 }
 
-/* Tablets */
+/* Responsive Design for Tablets */
 @media (max-width: 768px) {
   header {
-    padding: 1rem 0;
+    padding: 0.75rem 0; /* tighter spacing */
   }
 
   header h1 {
     font-size: 2rem;
-    letter-spacing: 0.5px; /* Subtle tightening on smaller screens */
+    letter-spacing: 0.5px;
   }
 }
 
-/* Phones */
+/* Responsive Design for Mobile */
 @media (max-width: 480px) {
   header {
-    padding: 0.8rem 0;
-    min-height: 80px;
+    padding: 0.6rem 0;
   }
 
   header h1 {
