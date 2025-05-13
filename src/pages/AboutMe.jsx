@@ -21,7 +21,7 @@ function AboutMe() {
             After spending the majority of my career in hospitality, I later transitioned into social services, working one-on-one with young adults facing mental health and substance abuse challenges. That role strengthened my empathy, resourcefulness, and commitment to helping others — qualities I now bring to the world of software development.
           </p>
           <p>
-            In 2024, I made the leap into tech and enrolled in Northwestern’s Full-Stack Web Development Bootcamp. During my time in the program, I learned to build full-stack applications using HTML, CSS, JavaScript, Typescript, React, Node.js, and more. What started as curiosity turned into a passion: coding challenges me creatively and logically in ways that feel both rewarding and exciting.
+            In 2024, I made the leap into tech and enrolled in Northwestern’s Full-Stack Web Development Bootcamp. During my time in the program, I learned to build full-stack applications using HTML, CSS, JavaScript, Typescript, React, Node.js, and more. What started as curiosity turned into a passion. Coding challenges me creatively and intellectually in ways that feel both exciting and rewarding.
           </p>
           <p>
             This portfolio highlights some of the projects I’ve built and skills I’ve learned along the way. I’m currently seeking opportunities as a junior web developer where I can continue to grow my skills, collaborate with others, and contribute meaningfully to a team.
