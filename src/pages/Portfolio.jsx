@@ -13,7 +13,7 @@ function Portfolio() {
     {
       title: 'Propfolio',
       image: projectImage1,
-      description: 'Propfolio is a web application designed for independent property owners who need an intuitive and efficient tool to track and manage their real estate investments. ',
+      description: 'Propfolio is a web application designed for independent property owners who need an intuitive and efficient tool to track and manage their real estate investments. (Currently in development.)',
       liveLink: 'https://real-state-portfolio.onrender.com/',
       githubLink: 'https://github.com/realejandro/propfolio'
     },
